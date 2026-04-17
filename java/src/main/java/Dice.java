@@ -29,9 +29,5 @@ public class Dice {
         System.out.println("Toss and sum of 2 dice: " + toss1);
     }
     
-
-
-
-
     
 }
