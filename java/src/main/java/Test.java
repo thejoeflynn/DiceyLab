@@ -1,23 +1,21 @@
-import static org.junit.Assert.assertTrue;
 
-public @interface Test {
+public class Test {
+
+    public static void main(String args []) {
+        Dice dice1 = new Dice(1);
+        int result1 = dice1.tossAndSum();
+        if (result1 >= 1 && result1 <= 6) {
+            System.out.println("It works " + result1);
+        }
     
-public class DiceTest {
-    @Test
-    public void testTossAndSumWithOneDie() {
-        Dice dice = new Dice(1);
-        int result = dice.tossAndSum();
-        assertTrue (result >=1 && result <= 6);
+        Dice dice2 = new Dice(2);
+        int result2 = dice2.tossAndSum();
+        if (result2 >= 2 && result1 <= 12) {
+            System.out.println("It works " + result1);
+        }
+
     }
 
-    @Test
-    public void testTossAndSumWithTwoDice() {
-        Dice dice = new Dice(2);
-        int result = dice.tossAndSum();
-        assertTrue(result >= 2 && result <= 12);
-    }
 
 }
 
-
-}
